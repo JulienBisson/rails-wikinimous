@@ -1,0 +1,18 @@
+<%= form_with model: @article do |f| %>
+<div>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</div>
+<div>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+</div>
+<div>
+  <%= f.submit %>
+</div>
+<div>
+<%= link_to "All articles",
+  articles_path(@article)
+%>
+</div>
+<% end %>
