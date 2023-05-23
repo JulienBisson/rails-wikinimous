@@ -1,6 +1,5 @@
 <h2><%= @article.title %></h2>
 <p><%= @article.content %></p>
 <%= link_to "Delete",
-  article_path(@article),
-  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-%>
+  article_path(@article), class:'text-danger fw-bold',
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>

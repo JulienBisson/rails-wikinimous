@@ -1,6 +1,6 @@
 <ul>
   <% @articles.each do |article| %>
-    <li><%= article.title %></li>
+    <li><%= link_to article.title, article_path(article), class:'bg-lightgrey text-white' %></li>
     <p><%= article.content %></p>
   <% end %>
 </ul>
